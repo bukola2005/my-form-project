@@ -150,6 +150,38 @@ img {
     padding: 1rem;
     margin-bottom: 2rem;
 
+    &__toggle {
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+
+      svg {
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        color: $color-gray-900;
+      }
+
+      &:hover {
+        background-color: $color-gray-200;
+        
+        svg {
+          transform: scale(1.1) rotate(90deg);
+        }
+      }
+
+      &:active {
+        svg {
+          transform: scale(0.95);
+        }
+      }
+    }
+
     &__logo {
         font-size: $font-size-lg;
         font-weight: 900;

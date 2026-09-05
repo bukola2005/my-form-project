@@ -153,6 +153,31 @@ img {
     padding: 1rem;
     margin-bottom: 2rem;
   }
+  .signup-layout .mobile-nav__toggle {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .signup-layout .mobile-nav__toggle svg {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #1F1F21;
+  }
+  .signup-layout .mobile-nav__toggle:hover {
+    background-color: #E6E6E6;
+  }
+  .signup-layout .mobile-nav__toggle:hover svg {
+    transform: scale(1.1) rotate(90deg);
+  }
+  .signup-layout .mobile-nav__toggle:active svg {
+    transform: scale(0.95);
+  }
   .signup-layout .mobile-nav__logo {
     font-size: 1.15rem;
     font-weight: 900;
